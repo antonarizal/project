@@ -13,5 +13,20 @@ Route::get('/album', function () {
 
 });
 
+Route::get('/', function () {
+    return view('katalog');
+});
+
+Route::get('/katalog', function () {
+    return view('katalog');
+});
+
+Route::get('/detail', function () {
+    return view('detail');
+});
+
+
+
+
 Route::get('/insert', [SiswaController::class, 'insert']);
 Route::get('/table', [SiswaController::class, 'table']);
