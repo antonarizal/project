@@ -13,7 +13,7 @@
                             <a class="text-decoration-none text-blue" href="#">Beranda</a>
                         </li>
                         <li class="breadcrumb-item">
-                            <a class="text-decoration-none text-blue" href="{{ route('katalog') }}">Katalog</a>
+                            <a class="text-decoration-none text-blue" href="{{ url('/katalog') }}">Katalog</a>
                         </li>
                         <li class="breadcrumb-item">
                             <a class="text-decoration-none text-blue" href="#">Buku Teks Kurikulum Merdeka</a>

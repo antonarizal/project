@@ -3,7 +3,7 @@
   <head>
     <link rel="icon" href="img/icon.png" type="image/png/ico" />
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
-    <title>SIBI - Sistem Informasi Perbukuan Indonesia</title>
+    <title>{{ $title }}</title>
     <script>
       function gtag() {
         dataLayer.push(arguments);

@@ -257,7 +257,7 @@
                 </div>
                 <div class="row">
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -271,7 +271,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -285,7 +285,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -299,7 +299,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -313,7 +313,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -327,7 +327,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -341,7 +341,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -355,7 +355,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -369,7 +369,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -383,7 +383,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -397,7 +397,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">
@@ -411,7 +411,7 @@
                     </a>
                   </div>
                   <div class="col-lg-4 my-2">
-                    <a class="text-decoration-none text-dark" href="{{ route('detail') }}">
+                    <a class="text-decoration-none text-dark" href="{{ url('/detail') }}">
                       <div class="card border-0 mt-3 CardBook_card__X2bUt">
                         <div class="card-header text-center text-lg-start bg-white p-0 border-0" style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
                           <img src="{{ asset('img/Cover.png') }}" alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)" class="CardBook_img-size__uwFHh">

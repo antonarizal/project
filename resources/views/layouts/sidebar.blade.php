@@ -17,7 +17,7 @@
               <a class="nav-link" href="#">Beranda</a>
             </li>
             <li class="nav-item mx-1">
-              <a class="nav-link" href="{{ url('/katalog') }}">Katalog Buku</a>
+              <a class="nav-link" href="{{ route('katalog') }}">Katalog Buku</a>
             </li>
           </ul>
           <ul class="navbar-nav mb-2 mb-lg-0 text-center text-xl-start">
