@@ -29,10 +29,9 @@
   </head>
   <body>
     <div id="root">
-
         @include('layouts.header')
 
-        @yield('content')//menyesuaikan halaman yang dipilih, katalog.blade.php atau detail.blade.php
+        @yield('content')
 
         @include('layouts.footer')
     </div>

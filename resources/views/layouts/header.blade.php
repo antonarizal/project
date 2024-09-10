@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="img/icon.png" height="50" alt="" />
+          <img src={{ asset('img/icon.png') }} height="50" alt="" />
           <div class="navbar-light" style="font-size: 0.95rem">
             <div>Sistem Informasi</div>
             <div class="fw-bold">Perbukuan Indonesia</div>

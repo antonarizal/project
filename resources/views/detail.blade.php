@@ -18,7 +18,7 @@
                         <li class="breadcrumb-item">
                             <a class="text-decoration-none text-blue" href="#">Buku Teks Kurikulum Merdeka</a>
                         </li>
-                        <li class="breadcrumb-item active">Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)
+                        <li class="breadcrumb-item active">{{ $buku->nama }}
                         </li>
                     </ol>
                 </nav>
@@ -27,13 +27,13 @@
         <section>
             <div class="container p-4">
                 <div class="row p-3 mb-5"
-                    style="background: url(&quot;img/backgroud.png&quot;) 100% / cover no-repeat; border-radius: 15px">
+                    style="background: url({{ asset('img/backgroud.png') }}) 100% / cover no-repeat; border-radius: 15px">
                     <div class="col-lg-3 text-center d-flex align-items-center justify-content-center">
-                        <img src="img/Cover.png" class="HeroDetail_img-size__rtKi5" alt="">
+                        <img src="{{ asset($buku->gambar) }}" class="HeroDetail_img-size__rtKi5" alt="">
                     </div>
                     <div class="col-lg-9 pt-5 pt-md-0">
-                        <button class="btn btn-sm rounded-pill btn-outline-danger">Buku PDF</button>
-                        <h3 class="my-3">Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)</h3>
+                        <button class="btn btn-sm rounded-pill btn-outline-danger">Buku {{ $buku->tipe }}</button>
+                        <h3 class="my-3">{{ $buku->nama }}</h3>
                         <button class="btn btn-sm btn-orange py-2 me-3 my-2">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf"
                                 class="svg-inline--fa fa-file-pdf me-1" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -77,19 +77,23 @@
                         <div class="row">
                             <div class="col-lg-2 mb-2 mb-md-0">
                                 <div>Penerbit</div>
-                                <small class="text-muted">Pusat Kurikulum dan Perbukuan </small>
+                                <small class="text-muted">{{ $buku->penerbit }}</small>
                             </div>
                             <div class="col-lg-3 mb-2 mb-md-0">
                                 <div>ISBN</div>
-                                <small class="text-muted">978-623-118-362-0</small>
+                                <small class="text-muted">{{ $buku->ISBN }}</small>
                             </div>
                             <div class="col-lg-2 mb-2 mb-md-0">
                                 <div>Edisi</div>
-                                <small class="text-muted">Revisi</small>
+                                <small class="text-muted">{{ $buku->edisi }}</small>
                             </div>
                             <div class="col-lg-3 mb-2 mb-md-0">
                                 <div>Penulis</div>
-                                <small class="text-muted">Sofie Dewayani</small>
+                                <small class="text-muted">{{ $buku->penulis }}</small>
+                            </div>
+                            <div class="col-lg-2 mb-2 mb-md-0">
+                                <div>HET</div>
+                                <small class="text-muted">RP. {{ $buku->het }}</small>
                             </div>
                         </div>
                     </div>
@@ -104,7 +108,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
-                                    <img src="img/Group.png" class="me-2" alt="">
+                                    <img src={{ asset('img/Group.png') }} class="me-2" alt="">
                                     <span>Belum ada ulasan dari pembaca</span>
                                 </div>
                             </div>
@@ -127,8 +131,8 @@
                         <a class="text-decoration-none text-dark" href="#">
                             <div class="card border-0 mt-3 CardBook_card__X2bUt">
                                 <div class="card-header text-center text-lg-start bg-white p-0 border-0"
-                                    style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
-                                    <img src="img/Cover.png"
+                                    style="background-image: url({{ asset('img/ellipse-1.png') }}); background-repeat: no-repeat; background-position: center bottom">
+                                    <img src="{{ asset('img/Cover.png') }}"
                                         alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)"
                                         class="CardBook_img-size__uwFHh">
                                 </div>
@@ -144,8 +148,8 @@
                         <a class="text-decoration-none text-dark" href="#">
                             <div class="card border-0 mt-3 CardBook_card__X2bUt">
                                 <div class="card-header text-center text-lg-start bg-white p-0 border-0"
-                                    style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
-                                    <img src="img/Cover.png"
+                                    style="background-image: url({{ asset('img/ellipse-1.png') }}); background-repeat: no-repeat; background-position: center bottom">
+                                    <img src="{{ asset('img/Cover.png') }}"
                                         alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)"
                                         class="CardBook_img-size__uwFHh">
                                 </div>
@@ -162,8 +166,8 @@
                         <a class="text-decoration-none text-dark" href="#">
                             <div class="card border-0 mt-3 CardBook_card__X2bUt">
                                 <div class="card-header text-center text-lg-start bg-white p-0 border-0"
-                                    style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
-                                    <img src="img/Cover.png"
+                                    style="background-image: url({{ asset('img/ellipse-1.png') }}); background-repeat: no-repeat; background-position: center bottom">
+                                    <img src="{{ asset('img/Cover.png') }}"
                                         alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)"
                                         class="CardBook_img-size__uwFHh">
                                 </div>
@@ -180,8 +184,8 @@
                         <a class="text-decoration-none text-dark" href="#">
                             <div class="card border-0 mt-3 CardBook_card__X2bUt">
                                 <div class="card-header text-center text-lg-start bg-white p-0 border-0"
-                                    style="background-image: url(&quot;/assets/image/home/ellipse-2.png&quot;); background-repeat: no-repeat; background-position: center bottom">
-                                    <img src="img/Cover.png"
+                                    style="background-image: url({{ asset('img/ellipse-1.png') }}); background-repeat: no-repeat; background-position: center bottom">
+                                    <img src="{{ asset('img/Cover.png') }}"
                                         alt="Bahasa Indonesia: Aku Bisa! untuk SD/MI Kelas I (Edisi Revisi)"
                                         class="CardBook_img-size__uwFHh">
                                 </div>
