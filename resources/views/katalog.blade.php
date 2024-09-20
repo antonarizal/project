@@ -73,7 +73,7 @@
                                   <label class="form-check-label" for="{{ $mapel->nama_mapel }}">{{ $mapel->nama_mapel }}</label>
                                 </div>
                               @endforeach
-                              </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-9">

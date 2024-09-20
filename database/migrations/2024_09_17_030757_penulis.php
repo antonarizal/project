@@ -11,18 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('buku', function (Blueprint $table) {
+        Schema::create('penuliss', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->string('penerbit');
-            $table->string('ISBN')->unique(); // ISBN harus unik
-            $table->string('edisi');
             $table->string('penulis');
-            $table->decimal('het', 8, 2); // Harga eceran tertinggi, dengan 2 angka desimal
-            $table->string('gambar')->nullable();
             $table->timestamps();
         });
-        
     }
 
     /**
@@ -30,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        
+        Schema::dropIfExists('penuliss');
     }
 };
