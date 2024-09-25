@@ -53,6 +53,9 @@ class BukuController extends Controller
     public function show(string $id)
     {
         //
+        $buku = Buku::find($id);
+
+        return view('buku.show',compact('buku'));
     }
 
     /**
