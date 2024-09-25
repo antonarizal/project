@@ -43,7 +43,7 @@
                     <td>
                         <select name="jenjang_id" id="" class="form-control">
                             @foreach ($jenjangs as $jenjang)
-                            <option value="{{ $jenjang->id }}">{{ $jenjang->jenjang }}</option>
+                            <option value="{{ $jenjang->id }}" {{ $jenjang->jenjang_id == $jenjang->id ? 'selected' : '' }}>{{ $jenjang->jenjang }}</option>
 
                             @endforeach
 
@@ -51,11 +51,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Jenjang</td>
+                    <td>Mapel</td>
                     <td>
                         <select name="mapel_id" id="" class="form-control">
                             @foreach ($mapels as $mapel)
-                            <option value="{{ $mapel->id }}">{{ $mapel->mapel }}</option>
+                            <option value="{{ $mapel->id }}"  {{ $mapel->mapel_id == $mapel->id ? 'selected' : '' }}>{{ $mapel->mapel }}</option>
                             @endforeach
                         </select>
                     </td>
@@ -65,7 +65,7 @@
                     <td>
                         <select name="tipe_id" id="" class="form-control">
                             @foreach ($tipes as $tipe)
-                            <option value="{{ $tipe->id }}">{{ $tipe->tipe }}</option>
+                            <option value="{{ $tipe->id }}"  {{ $tipe->tipe_id == $tipe->id ? 'selected' : '' }}>{{ $tipe->tipe }}</option>
 
                             @endforeach
 
