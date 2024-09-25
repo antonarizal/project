@@ -1,19 +1,23 @@
 @extends('layouts.app')
 @section('title','Barang')
 @section('content')
-<h1 class="h3 mb-2 text-gray-800">Tabel Buku</h1>
 
 <!-- DataTales Example -->
-<form method="post" action="/buku">
+<form method="post" action="{{ route('buku.update', $buku->id) }}">
     @csrf
     @method('PUT')
 
 <div class="col-md-6">
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Tambah Buku</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Edit Buku</h6>
     </div>
     <div class="card-body">
+        @if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            {{ $message }}
+        </div>
+        @endif
         <div class="table-responsive">
             <table class="table">
                 <tr>

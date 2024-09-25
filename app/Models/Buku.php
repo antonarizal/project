@@ -9,7 +9,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Buku extends Model
 {
     use HasFactory;
-    protected $guided = [];
+    protected $fillable = [
+        'judul',
+        'penulis_id',
+        'mapel_id',
+        'jenjang_id',
+        'tipe_id',
+        'isbn',
+        'edisi',
+    ];
 
     /**
      * Get the user that owns the Buku
