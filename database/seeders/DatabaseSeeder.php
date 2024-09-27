@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Tipe;
+use App\Models\Buku;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Tipe;
 use App\Models\User;
 use App\Models\Edisi;
 use App\Models\Mapel;
@@ -21,10 +22,10 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        // User::factory()->create([
+        //     'name' => 'Test User',
+        //     'email' => 'test@example.com',
+        // ]);
 
         Tipe::insert([
             ['tipe' => 'PDF'],
@@ -116,6 +117,19 @@ class DatabaseSeeder extends Seeder
             ['mapel' => 'Biologi'],
             ['mapel' => 'Fisika'],
             ['mapel' => 'Kimia'],
+        ]);
+
+        Buku::insert([
+            'nama' => 'coba',
+            'tipe_id' => 1,
+            'jenjang_id' => 1,
+            'mapel_id' => 1,
+            'penerbit_id' => 1,
+            'isbn' => 0,
+            'edisi_id' => 1,
+            'penulis_id' => 1,
+            'het' => 1000,
+            'gambar' => 'img/Cover.png'
         ]);
     }
 }

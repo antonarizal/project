@@ -3,7 +3,7 @@
   <head>
     <link rel="icon" href="img/icon.png" type="image/png/ico" />
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
-    <title>{{ $title }}</title>
+    <title> @yield('title') </title>
     <script>
       function gtag() {
         dataLayer.push(arguments);
@@ -29,7 +29,7 @@
   </head>
   <body>
     <div id="root">
-        @include('layouts.header')
+        @include('layouts.topbar')
 
         @yield('content')
 

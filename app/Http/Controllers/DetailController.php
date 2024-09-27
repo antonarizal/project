@@ -15,7 +15,6 @@ class DetailController extends Controller
         // Kirim data ke view
         return view('detail', [
             'buku' => $buku, 
-            'title' => 'Detail Buku'
         ]);
     }
 }

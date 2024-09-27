@@ -17,7 +17,6 @@ class KatalogController extends Controller
         // Kirim data ke view
         return view('katalog', [
             'bukuList' => $bukuList, 
-            'title' => 'Daftar Buku',
             'mapelList' => $mapelList
         ]);
     }

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('bukus', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
+            $table->string('nama');
             $table->unsignedBigInteger('tipe_id');
             $table->unsignedBigInteger('jenjang_id');
             $table->unsignedBigInteger('mapel_id');
