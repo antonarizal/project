@@ -71,25 +71,24 @@ class BukuController extends Controller
     }
 
     public function update(Request $request, Buku $buku)
-{
+    {
     // Validasi input
-    $request->validate([
-        'nama' => 'required|string|max:255',
-        'penulis_id' => 'required|exists:penuliss,id',
-        'penerbit_id' => 'required|exists:penerbits,id',
-        'jenjang_id' => 'required|exists:jenjangs,id',
-        'mapel_id' => 'required|exists:mapels,id',
-        'tipe_id' => 'required|exists:tipes,id',
-        'isbn' => 'nullable|string|max:20',
-        'het' => 'nullable|numeric',
-        'edisi_id' => 'required|exists:edisis,id',
-    ]);
+        $request->validate([
+            'nama' => 'required|string|max:255',
+            'penulis_id' => 'required|exists:penuliss,id',
+            'penerbit_id' => 'required|exists:penerbits,id',
+            'jenjang_id' => 'required|exists:jenjangs,id',
+            'mapel_id' => 'required|exists:mapels,id',
+            'tipe_id' => 'required|exists:tipes,id',
+            'isbn' => 'nullable|string|max:20',
+            'het' => 'nullable|numeric',
+            'edisi_id' => 'required|exists:edisis,id',
+        ]);
 
-    $buku->update($request->all());
+        $buku->update($request->all());
 
-    return redirect()->route('buku.edit', $buku->id)->with('success', 'Buku berhasil diupdate.');
-}
-
+        return redirect()->route('buku.edit', $buku->id)->with('success', 'Buku berhasil diupdate.');
+    }
 
     public function destroy(Buku $buku)
     {

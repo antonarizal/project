@@ -38,10 +38,10 @@ class EdisiController extends Controller
     }
 
     public function edit(string $id)
-{
+    {
     $edisi = Edisi::find($id);
     return view('admin.edisi.edit', compact('edisi'));
-}
+    }
 
     public function update(Request $request, Edisi $edisi)
     {

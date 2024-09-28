@@ -23,7 +23,7 @@
                 <tr>
                     <td>Edisi</td>
                     <td>
-                        <input type="text" class="form-control" name="isbn" value="{{ $edisi->edisi }}">
+                        <input type="text" class="form-control" name="edisi" value="{{ $edisi->edisi }}">
                     </td>
                 </tr>
             </table>
