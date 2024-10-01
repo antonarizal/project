@@ -50,13 +50,11 @@
                 @include('admin.layouts.topbar')
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                    @yield('content')
-                <!-- /.container-fluid -->
+                @yield('content')
 
             </div>
             <!-- End of Main Content -->
-
+            
             <!-- Footer -->
             @include('admin.layouts.footer')
             <!-- End of Footer -->
