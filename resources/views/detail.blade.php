@@ -29,10 +29,15 @@
                 <div class="row p-3 mb-5"
                     style="background: url({{ asset('img/backgroud.png') }}) 100% / cover no-repeat; border-radius: 15px">
                     <div class="col-lg-3 text-center d-flex align-items-center justify-content-center">
-                        <img src="{{ asset($buku->gambar) }}" class="HeroDetail_img-size__rtKi5" alt="">
+                        @if ($buku->gambar)
+                            <img src="{{ Storage::url($buku->gambar) }}" alt="{{ $buku->nama }}"
+                                class="CardBook_img-size__uwFHh">
+                        @else
+                            Tidak ada gambar
+                        @endif
                     </div>
                     <div class="col-lg-9 pt-5 pt-md-0">
-                        <button class="btn btn-sm rounded-pill btn-outline-danger">Buku {{ $buku->tipe }}</button>
+                        <button class="btn btn-sm rounded-pill btn-outline-danger">Buku {{ $buku->tipe->tipe }}</button>
                         <h3 class="my-3">{{ $buku->nama }}</h3>
                         <button class="btn btn-sm btn-orange py-2 me-3 my-2">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf"
@@ -77,19 +82,19 @@
                         <div class="row">
                             <div class="col-lg-2 mb-2 mb-md-0">
                                 <div>Penerbit</div>
-                                <small class="text-muted">{{ $buku->penerbit }}</small>
+                                <small class="text-muted">{{ $buku->penerbit->penerbit }}</small>
                             </div>
                             <div class="col-lg-3 mb-2 mb-md-0">
                                 <div>ISBN</div>
-                                <small class="text-muted">{{ $buku->ISBN }}</small>
+                                <small class="text-muted">{{ $buku->isbn }}</small>
                             </div>
                             <div class="col-lg-2 mb-2 mb-md-0">
                                 <div>Edisi</div>
-                                <small class="text-muted">{{ $buku->edisi }}</small>
+                                <small class="text-muted">{{ $buku->edisi->edisi }}</small>
                             </div>
                             <div class="col-lg-3 mb-2 mb-md-0">
                                 <div>Penulis</div>
-                                <small class="text-muted">{{ $buku->penulis }}</small>
+                                <small class="text-muted">{{ $buku->penulis->penulis }}</small>
                             </div>
                             <div class="col-lg-2 mb-2 mb-md-0">
                                 <div>HET</div>

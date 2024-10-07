@@ -13,7 +13,6 @@
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <form method="POST" action="{{ route('logout') }}">
                             @csrf
-
                             <x-dropdown-link class="btn" :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();">

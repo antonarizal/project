@@ -2,6 +2,7 @@
 /node_modules
 /public/storage
 /storage/*.key
+/frontend
 /vendor
 .env.backup
 .env.production

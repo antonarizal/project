@@ -13,19 +13,34 @@
                         <div class="card mt-3">
                             <div class="card-header">TIPE BUKU</div>
                             <div class="card-body">
-                                <div class="form-check">
-                                    <input class="form-check-input" name="type_book" type="checkbox" id="typePDF">
-                                    <label class="form-check-label" for="typePDF">Buku PDF</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" name="type_book" type="checkbox" id="typeInteractive">
-                                    <label class="form-check-label" for="typeInteractive">Buku Interaktif</label>
-                                </div>
+                                @foreach ($tipeList as $tipe)
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="{{ $tipe->tipe }}" value="{{ $tipe->tipe }}">
+                                        <label class="form-check-label" for="{{ $tipe->tipe }}">Buku {{ $tipe->tipe }}</label>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="card mt-3">
+                            <div class="card-header">JENJANG</div>
+                            <div class="card-body">
+                                @foreach ($jenjangList as $jenjang)
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="{{ $jenjang->jenjang }}" value="{{ $jenjang->jenjang }}">
+                                        <label class="form-check-label" for="{{ $jenjang->jenjang }}">{{ $jenjang->jenjang }}</label>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                         <div class="card mt-3">
                             <div class="card-header">Kelas</div>
                             <div class="card-body row overflow-auto">
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="I"value="">
+                                        <label class="form-check-label" for="I">I</label>
+                                    </div>
+                                </div>
                                 <div class="col-6">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="VII" value="">
@@ -34,8 +49,8 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="X" value="">
-                                        <label class="form-check-label" for="X">X</label>
+                                        <input class="form-check-input" type="checkbox" id="II" value="">
+                                        <label class="form-check-label" for="II">II</label>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -46,14 +61,44 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="XI" value="">
-                                        <label class="form-check-label" for="XI">XI</label>
+                                        <input class="form-check-input" type="checkbox" id="III" value="">
+                                        <label class="form-check-label" for="III">III</label>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="IX" value="">
                                         <label class="form-check-label" for="IX">IX</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="IV" value="">
+                                        <label class="form-check-label" for="IV">IV</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="X" value="">
+                                        <label class="form-check-label" for="X">X</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="V" value="">
+                                        <label class="form-check-label" for="V">V</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="XI" value="">
+                                        <label class="form-check-label" for="XI">XI</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="VI" value="">
+                                        <label class="form-check-label" for="VI">VI</label>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -67,12 +112,12 @@
                         <div class="card mt-3">
                             <div class="card-header">MATA PELAJARAN</div>
                             <div class="card-body overflow-auto" style="height: 230px">
-                              @foreach ($mapelList as $mapel)
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" id="{{ $mapel->nama_mapel }}" value="{{ $mapel->nama_mapel }}">
-                                  <label class="form-check-label" for="{{ $mapel->nama_mapel }}">{{ $mapel->nama_mapel }}</label>
-                                </div>
-                              @endforeach
+                                @foreach ($mapelList as $mapel)
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="{{ $mapel->mapel }}" value="{{ $mapel->mapel }}">
+                                        <label class="form-check-label" for="{{ $mapel->mapel }}">{{ $mapel->mapel }}</label>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -91,16 +136,18 @@
                                 <div class="col-lg-4 my-2">
                                     <a class="text-decoration-none text-dark"
                                         href="{{ url('/detail', ['id' => $buku->id]) }}">
-                                        <div class="card border-0 mt-3">
-                                            <div class="card-header text-center bg-white p-0"
+                                        <div class="card border-0 mt-3 CardBook_card__X2bUt">
+                                            <div class="card-header text-center text-lg-start bg-white p-0 border-0"
                                                 style="background-image: url({{ asset('img/ellipse-1.png') }}); background-repeat: no-repeat; background-position: center bottom">
-                                                <img src="{{ asset($buku->gambar) }}" alt="{{ $buku->nama }}"
-                                                    class="CardBook_img-size__uwFHh">
+                                                @if ($buku->gambar)
+                                                <img src="{{ Storage::url($buku->gambar) }}" alt="{{ $buku->nama }}" class="CardBook_img-size__uwFHh">
+                                                @else
+                                                    Tidak ada gambar
+                                                @endif
                                             </div>
                                             <div class="card-body px-5 py-2">
-                                                <span class="badge rounded-pill bg-danger mt-2">{{ $buku->tipe }}</span>
-                                                <span
-                                                    class="badge rounded-pill bg-secondary mt-2 ms-1">{{ $buku->jenjang }}</span>
+                                                <span class="badge rounded-pill bg-danger mt-2">{{ $buku->tipe->tipe }}</span>
+                                                <span class="badge rounded-pill bg-secondary mt-2 ms-1">{{ $buku->jenjang->jenjang }}</span>
                                                 <div class="my-2">{{ $buku->nama }}</div>
                                             </div>
                                         </div>

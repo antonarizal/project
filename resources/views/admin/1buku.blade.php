@@ -39,8 +39,10 @@
                             @foreach ($bukus as $key => $buku)
                                 <tr>
                                     <td>
-                                        <button type="button" class="btn btn-success shadow-sm" data-bs-toggle="modal" data-bs-target="#updateBukuModal{{ $buku->id }}">Update</button>
-                                        <button type="button" class="btn btn-danger shadow-sm" data-bs-toggle="modal" data-bs-target="#deleteBukuModal{{ $buku->id }}">Delete</button>
+                                        <button type="button" class="btn btn-success shadow-sm" data-bs-toggle="modal"
+                                            data-bs-target="#updateBukuModal{{ $buku->id }}">Update</button>
+                                        <button type="button" class="btn btn-danger shadow-sm" data-bs-toggle="modal"
+                                            data-bs-target="#deleteBukuModal{{ $buku->id }}">Delete</button>
                                     </td>
                                     <td>{{ $key + 1 }}</td>
                                     <td>{{ $buku->id }}</td>
@@ -64,7 +66,6 @@
             </div>
         </div>
     </div>
-    <!-- Add Buku Modal -->
     <div class="modal fade" id="addBukuModal" tabindex="-1" aria-labelledby="addBukuModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -88,18 +89,19 @@
                                     <div class="col-12 col-lg-9">
                                         <select class="form-control form-select" name="tipe_id" id="tipe_id" required>
                                             <option value="">Pilih Tipe</option>
-                                            @foreach($tipes as $tipe)
+                                            @foreach ($tipes as $tipe)
                                                 <option value="{{ $tipe->id }}">{{ $tipe->tipe }}</option>
                                             @endforeach
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group row mb-3">
-                                    <label for="jenjang_id" class="col-12 col-lg-3 fw-bold mb-2 mb-lg-0 label">Jenjang</label>
+                                    <label for="jenjang_id"
+                                        class="col-12 col-lg-3 fw-bold mb-2 mb-lg-0 label">Jenjang</label>
                                     <div class="col-12 col-lg-9">
                                         <select class="form-control form-select" name="jenjang_id" id="jenjang_id" required>
                                             <option value="">Pilih Jenjang</option>
-                                            @foreach($jenjangs as $jenjang)
+                                            @foreach ($jenjangs as $jenjang)
                                                 <option value="{{ $jenjang->id }}">{{ $jenjang->jenjang }}</option>
                                             @endforeach
                                         </select>
@@ -110,18 +112,20 @@
                                     <div class="col-12 col-lg-9">
                                         <select class="form-control form-select" name="mapel_id" id="mapel_id" required>
                                             <option value="">Pilih Mapel</option>
-                                            @foreach($mapels as $mapel)
+                                            @foreach ($mapels as $mapel)
                                                 <option value="{{ $mapel->id }}">{{ $mapel->mapel }}</option>
                                             @endforeach
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group row mb-3">
-                                    <label for="penerbit_id" class="col-12 col-lg-3 fw-bold mb-2 mb-lg-0 label">Penerbit</label>
+                                    <label for="penerbit_id"
+                                        class="col-12 col-lg-3 fw-bold mb-2 mb-lg-0 label">Penerbit</label>
                                     <div class="col-12 col-lg-9">
-                                        <select class="form-control form-select" name="penerbit_id" id="penerbit_id" required>
+                                        <select class="form-control form-select" name="penerbit_id" id="penerbit_id"
+                                            required>
                                             <option value="">Pilih Penerbit</option>
-                                            @foreach($penerbits as $penerbit)
+                                            @foreach ($penerbits as $penerbit)
                                                 <option value="{{ $penerbit->id }}">{{ $penerbit->penerbit }}</option>
                                             @endforeach
                                         </select>
@@ -140,18 +144,20 @@
                                     <div class="col-12 col-lg-9">
                                         <select class="form-control form-select" name="edisi_id" id="edisi_id" required>
                                             <option value="">Pilih Edisi</option>
-                                            @foreach($edisis as $edisi)
+                                            @foreach ($edisis as $edisi)
                                                 <option value="{{ $edisi->id }}">{{ $edisi->edisi }}</option>
                                             @endforeach
                                         </select>
                                     </div>
                                 </div>
                                 <div class="form-group row mb-3">
-                                    <label for="penulis_id" class="col-12 col-lg-3 fw-bold mb-2 mb-lg-0 label">Penulis</label>
+                                    <label for="penulis_id"
+                                        class="col-12 col-lg-3 fw-bold mb-2 mb-lg-0 label">Penulis</label>
                                     <div class="col-12 col-lg-9">
-                                        <select class="form-control form-select" name="penulis_id" id="penulis_id" required>
+                                        <select class="form-control form-select" name="penulis_id" id="penulis_id"
+                                            required>
                                             <option value="">Pilih Penulis</option>
-                                            @foreach($penuliss as $penulis)
+                                            @foreach ($penuliss as $penulis)
                                                 <option value="{{ $penulis->id }}">{{ $penulis->penulis }}</option>
                                             @endforeach
                                         </select>
@@ -160,13 +166,16 @@
                                 <div class="form-group row mb-3">
                                     <label for="het" class="col-12 col-lg-3 fw-bold mb-2 mb-lg-0 label">HET</label>
                                     <div class="col-12 col-lg-9">
-                                        <input type="number" class="form-control" name="het" id="het" required>
+                                        <input type="number" class="form-control" name="het" id="het"
+                                            required>
                                     </div>
                                 </div>
                                 <div class="form-group row mb-3">
-                                    <label for="gambar" class="col-12 col-lg-3 fw-bold mb-2 mb-lg-0 label">Gambar</label>
+                                    <label for="gambar"
+                                        class="col-12 col-lg-3 fw-bold mb-2 mb-lg-0 label">Gambar</label>
                                     <div class="col-12 col-lg-9">
-                                        <input type="file" class="form-control" name="gambar" id="gambar" accept="image/*">
+                                        <input type="file" class="form-control" name="gambar" id="gambar"
+                                            accept="image/*">
                                     </div>
                                 </div>
                             </div>
@@ -180,14 +189,15 @@
             </div>
         </div>
     </div>
-    <!-- Delete Buku Modal -->
     @foreach ($bukus as $buku)
-        <div class="modal fade" id="deleteBukuModal{{ $buku->id }}" tabindex="-1" aria-labelledby="deleteBukuModalLabel{{ $buku->id }}" aria-hidden="true">
+        <div class="modal fade" id="deleteBukuModal{{ $buku->id }}" tabindex="-1"
+            aria-labelledby="deleteBukuModalLabel{{ $buku->id }}" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="deleteBukuModalLabel{{ $buku->id }}">Hapus Buku</h5>
-                        <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                        <button type="button" class="btn" data-bs-dismiss="modal"
+                            aria-label="Close">&times;</button>
                     </div>
                     <div class="modal-body">
                         Apakah kamu yakin ingin menghapus buku <strong>{{ $buku->nama }}</strong>?
