@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- DataTales Example -->
-<form method="post" action="{{ route('buku.index') }}">
+<form method="post" action="{{ route('buku.index') }}" enctype="multipart/form-data">
     @csrf
 <div class="col-md-6">
 <div class="card shadow mb-4">
@@ -75,6 +75,12 @@
                     <td>Edisi</td>
                     <td>
                         <input type="text" class="form-control" name="edisi">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gambar</td>
+                    <td>
+                        <input type="file" name="gambar" id="gambar">
                     </td>
                 </tr>
             </table>

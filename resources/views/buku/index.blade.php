@@ -25,7 +25,7 @@
                         <th>Penulis</th>
                         <th>ISBN</th>
                         <th>Edisi</th>
-                        <th>Het</th>
+                        <th>Info</th>
                         <th>Edit</th>
                         <th>Action</th>
                     </tr>
@@ -40,7 +40,7 @@
                         <td>{{ $buku->penulis->nama }}</td>
                         <td>{{ $buku->isbn }}</td>
                         <td>{{ $buku->edisi }}</td>
-                        <td>{{ $buku->het }}</td>
+                        <td><a href="{{  route('buku.show', $buku->id) }}" class="btn btn-info">Info</a></td>
                         <td><a href="{{  route('buku.edit', $buku->id) }}" class="btn btn-info">Edit</a></td>
                         <td>
                             <form action="{{ route('buku.destroy', $buku->id) }}" method="POST" style="display: inline;">

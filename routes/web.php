@@ -16,4 +16,3 @@ Route::get('/', function () {
 // harus login (auth)
 Route::resource('/buku',BukuController::class);
 
-

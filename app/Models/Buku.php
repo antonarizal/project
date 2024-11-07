@@ -17,6 +17,7 @@ class Buku extends Model
         'tipe_id',
         'isbn',
         'edisi',
+        'gambar',
     ];
 
     /**

@@ -57,6 +57,12 @@
                                 {{ $buku->edisi }}
                             </td>
                         </tr>
+                        <tr>
+                            <td>Gambar</td>
+                            <td>
+                               <img src="{{ Storage::url('gambar/'.$buku->gambar) }}" alt="" style="width:100%">
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>

@@ -8,6 +8,7 @@ use App\Models\Mapel;
 use App\Models\Jenjang;
 use App\Models\Penulis;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class BukuController extends Controller
 {
@@ -42,7 +43,17 @@ class BukuController extends Controller
     public function store(Request $request)
     {
         //
-        $insert = Buku::insert($request->except('_token'));
+        $request->validate([
+            'gambar' => 'required|mimes:jpg,jpeg,png,pdf|max:2048',
+        ]);
+
+        $path = $request->file('gambar')->store('gambar', 'public');
+        $data = $request->except('_token');
+        $storedFileName = basename($path);
+        $orifilename = $request->file('gambar')->getClientOriginalName();
+        $data["gambar"] = $storedFileName;
+
+        $insert = Buku::insert($data);
         return redirect()->route('buku.index')->with('success', 'Buku berhasil ditambahkan.');
 
     }
